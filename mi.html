@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoMind</title>
+    <link rel="icon" href="images/crypto-logo.gif.gif" type="image/gif">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .crypto-logo {
+            width: 30px; 
+            height: auto;
+            margin-left: 10px; 
+            vertical-align: middle; 
+        }
+
+        .crypto-rate-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .crypto-gif {
+            width: 40px; 
+            height: auto;
+            margin-left: 10px;
+        }
+
+        .crypto-rate {
+            font-size: 1.1em;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kriptovaluták Világa</h1>
+        <img src="logo.png" alt="Logo">
+        <nav>
+            <a href="index.html">Kezdőlap</a>
+            <a href="mi.html">Mi az a kriptovaluta?</a>
+            <a href="veszely.html">Előnyök & Veszélyek</a>
+            <a href="kviz.html">Kvíz</a>
+            <a href="kalkulator.html">Kripto Kalkulátor</a>
+            <a href="hires.html">Híres Kriptosok</a>
+            <a href="kapcsolat.html">Kapcsolat</a>
+        </nav>
+    </header>
+
+    <section id="crypto-info">
+        <h2>Röviden a kriptórol</h2>
+        <p>A kriptovaluták digitális pénzek, amelyek kizárólag elektronikus formában léteznek. Decentralizáltak, tehát nem tartoznak egyetlen központi hatósághoz. A legfontosabb kriptovaluták a blockchain technológián alapulnak, ami biztosítja a biztonságos és átlátható tranzakciókat.</p>
+
+        <h2>Részletes Kriptovaluta Információk</h2>
+        <ul>
+            <li><strong>Bitcoin (BTC)</strong>: A legelső és legismertebb kriptovaluta. Az egész kriptovaluta piac alapját képezi. <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/800px-Bitcoin.svg.png" alt="Bitcoin Logo" class="crypto-logo"></li>
+            <li><strong>Ethereum (ETH)</strong>: A blockchain alapú decentralizált alkalmazások és okos szerződések platformja. <img src="https://www.cdnlogo.com/logos/e/81/ethereum-eth.svg" alt="Ethereum Logo" class="crypto-logo"></li>
+            <li><strong>Binance Coin (BNB)</strong>: A Binance tőzsdéhez kapcsolódó kriptovaluta, amelyet kereskedési kedvezményekre is fel lehet használni. <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP9cUvoCvmCXO4pNHvnREHBCKW30U-BVxKfg&s" alt="Binance Coin Logo" class="crypto-logo"></li>
+            <li><strong>Ripple (XRP)</strong>: A bankok és pénzügyi intézmények által használt gyors nemzetközi pénzátutalásokhoz készült kriptovaluta. <img src="https://cdn.prod.website-files.com/65c604945a2df390f793778e/67ab5d894f2359f9bc06e3a0_Untitled.png" alt="Ripple Logo" class="crypto-logo"></li>
+            <li><strong>Litecoin (LTC)</strong>: A Bitcoin alternatívája, gyorsabb tranzakciók és alacsonyabb költségek mellett. <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4umyYNRbBrKW7BYl3-DHwIbYj59CwBcumw&s" alt="Litecoin Logo" class="crypto-logo"></li>
+            <li><strong>Cardano (ADA)</strong>: Olyan platform, amely lehetővé teszi a biztonságos és skálázható blockchain alkalmazások fejlesztését. <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtpzjjSrmtVAjdrAAckdsESsq3c3hy6OAIqw&s" alt="Cardano Logo" class="crypto-logo"></li>
+            <li><strong>Polkadot (DOT)</strong>: Egy interoperábilis platform, amely lehetővé teszi a különböző blockchain hálózatok összekapcsolódását. <img src="https://1000logos.net/wp-content/uploads/2022/08/Polkadot-Symbol.png" alt="Polkadot Logo" class="crypto-logo"></li>
+            <li><strong>Chainlink (LINK)</strong>: Olyan decentralizált oracle hálózat, amely lehetővé teszi, hogy a blockchainok adatokat kommunikáljanak a valós világból. <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/1975.png" alt="Chainlink Logo" class="crypto-logo"></li>
+            <li><strong>Dogecoin (DOGE)</strong>: Eredetileg egy mém alapú kriptovaluta, de a közösség erejével széles körben elterjedt és az egyik legnépszerűbb lett. <img src="https://upload.wikimedia.org/wikipedia/en/d/d0/Dogecoin_Logo.png" alt="Dogecoin Logo" class="crypto-logo"></li>
+            <li><strong>Solana (SOL)</strong>: Magas sebességű, alacsony költségű tranzakciókat kínáló blockchain platform. <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Solana_logo.png" alt="Solana Logo" class="crypto-logo"></li>
+        </ul>
+
+        <h2>Élő Kriptovaluta Árfolyamok</h2>
+        <div id="crypto-rates">
+            <p>Itt láthatóak az aktuális kripto árfolyamok:</p>
+            <div class="crypto-rate-container" id="btc-rate">
+                <span class="crypto-rate">Bitcoin (BTC): <span>Loading...</span></span>
+                <img src="https://media.giphy.com/media/3o6Zt9JwPA9yU7tDla/giphy.gif" alt="Bitcoin Tőzsdei GIF" class="crypto-gif">
+            </div>
+            <div class="crypto-rate-container" id="eth-rate">
+                <span class="crypto-rate">Ethereum (ETH): <span>Loading...</span></span>
+                <img src="https://media.giphy.com/media/3o6Zt9JwPA9yU7tDla/giphy.gif" alt="Ethereum Tőzsdei GIF" class="crypto-gif">
+            </div>
+            <div class="crypto-rate-container" id="bnb-rate">
+                <span class="crypto-rate">Binance Coin (BNB): <span>Loading...</span></span>
+                <img src="https://media.giphy.com/media/3o6Zt9JwPA9yU7tDla/giphy.gif" alt="Binance Coin Tőzsdei GIF" class="crypto-gif">
+            </div>
+            <div class="crypto-rate-container" id="xrp-rate">
+                <span class="crypto-rate">Ripple (XRP): <span>Loading...</span></span>
+                <img src="https://media.giphy.com/media/3o6Zt9JwPA9yU7tDla/giphy.gif" alt="Ripple Tőzsdei GIF" class="crypto-gif">
+            </div>
+            <div class="crypto-rate-container" id="ltc-rate">
+                <span class="crypto-rate">Litecoin (LTC): <span>Loading...</span></span>
+                <img src="https://media.giphy.com/media/3o6Zt9JwPA9yU7tDla/giphy.gif" alt="Litecoin Tőzsdei GIF" class="crypto-gif">
+            </div>
+            <div class="crypto-rate-container" id="ada-rate">
+                <span class="crypto-rate">Cardano (ADA): <span>Loading...</span></span>
+                <img src="https://media.giphy.com/media/3o6Zt9JwPA9yU7tDla/giphy.gif" alt="Cardano Tőzsdei GIF" class="crypto-gif">
+            </div>
+            <div class="crypto-rate-container" id="dot-rate">
+                <span class="crypto-rate">Polkadot (DOT): <span>Loading...</span></span>
+                <img src="https://media.giphy.com/media/3o6Zt9JwPA9yU7tDla/giphy.gif" alt="Polkadot Tőzsdei GIF" class="crypto-gif">
+            </div>
+            <div class="crypto-rate-container" id="link-rate">
+                <span class="crypto-rate">Chainlink (LINK): <span>Loading...</span></span>
+                <img src="https://media.giphy.com/media/3o6Zt9JwPA9yU7tDla/giphy.gif" alt="Chainlink Tőzsdei GIF" class="crypto-gif">
+            </div>
+            <div class="crypto-rate-container" id="doge-rate">
+                <span class="crypto-rate">Dogecoin (DOGE): <span>Loading...</span></span>
+                <img src="https://media.giphy.com/media/3o6Zt9JwPA9yU7tDla/giphy.gif" alt="Dogecoin Tőzsdei GIF" class="crypto-gif">
+            </div>
+            <div class="crypto-rate-container" id="sol-rate">
+                <span class="crypto-rate">Solana (SOL): <span>Loading...</span></span>
+                <img src="https://media.giphy.com/media/3o6Zt9JwPA9yU7tDla/giphy.gif" alt="Solana Tőzsdei GIF" class="crypto-gif">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script>
+        $(document).ready(function() {
+        
+            const url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,binancecoin,ripple,litecoin,cardano,polkadot,chainlink,dogecoin,solana&vs_currencies=huf&include_market_cap=true&include_24hr_change=true';
+
+        
+            $.getJSON(url, function(data) {
+               
+                const cryptos = [
+                    {name: 'Bitcoin', symbol: 'BTC', data: data.bitcoin},
+                    {name: 'Ethereum', symbol: 'ETH', data: data.ethereum},
+                    {name: 'Binance Coin', symbol: 'BNB', data: data.binancecoin},
+                    {name: 'Ripple', symbol: 'XRP', data: data.ripple},
+                    {name: 'Litecoin', symbol: 'LTC', data: data.litecoin},
+                    {name: 'Cardano', symbol: 'ADA', data: data.cardano},
+                    {name: 'Polkadot', symbol: 'DOT', data: data.polkadot},
+                    {name: 'Chainlink', symbol: 'LINK', data: data.chainlink},
+                    {name: 'Dogecoin', symbol: 'DOGE', data: data.dogecoin},
+                    {name: 'Solana', symbol: 'SOL', data: data.solana}
+                ];
+
+                cryptos.forEach(crypto => {
+                   
+                    $(`#${crypto.symbol.toLowerCase()}-rate`).html(`${crypto.name} (${crypto.symbol}): ${crypto.data.huf} HUF`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

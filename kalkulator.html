@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoMind</title>
+  <link rel="icon" href="images/crypto-logo.gif.gif" type="image/gif">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Főoldal</h1>
+  <img src="logo.png" alt="Logo">
+  <nav>
+    <a href="index.html">Kezdőlap</a>
+    <a href="mi.html">Mi az a kriptovaluta?</a>
+    <a href="veszely.html">Előnyök & Veszélyek</a>
+    <a href="kviz.html">Kvíz</a>
+    <a href="hires.html">Híres Kriptosok</a>
+    <a href="kapcsolat.html">Kapcsolat</a>
+  </nav>
+</header>
+
+<div class="hero">
+  
+</div>
+
+<main>
+  <section id="kezdo">
+    <h2>Kezdőlap</h2>
+    <p>Üdvözlünk a digitális tudatossággal foglalkozó weboldalunkon! Itt megismerheted a kriptovaluták világát, megtanulhatod azok előnyeit, veszélyeit, és még egy kvízt is kitölthetsz a tudásod tesztelésére.</p>
+  </section>
+
+ 
+  <section id="crypto-converter">
+    <h2>Kriptovaluta Átváltó</h2>
+    
+    <img src="images/calculator.png" alt="Bitcoin" width="80">
+    <p>Válaszd ki a kívánt valutát és számold ki a kriptovaluták átváltását!</p>
+
+    <label for="crypto-select">Válaszd ki a kriptovalutát:</label>
+    <select id="crypto-select">
+      <option value="bitcoin">Bitcoin (BTC)</option>
+      <option value="ethereum">Ethereum (ETH)</option>
+      <option value="litecoin">Litecoin (LTC)</option>
+      <option value="binancecoin">Binance Coin (BNB)</option>
+      <option value="ripple">Ripple (XRP)</option>
+      <option value="cardano">Cardano (ADA)</option>
+      <option value="polkadot">Polkadot (DOT)</option>
+      <option value="solana">Solana (SOL)</option>
+      <option value="dogecoin">Dogecoin (DOGE)</option>
+      <option value="chainlink">Chainlink (LINK)</option>
+      <option value="monero">Monero (XMR)</option>
+      <option value="stellar">Stellar (XLM)</option>
+      <option value="vechain">VeChain (VET)</option>
+      <option value="tezos">Tezos (XTZ)</option>
+      <option value="eos">EOS (EOS)</option>
+      <option value="aave">Aave (AAVE)</option>
+      <option value="litecoin">Litecoin (LTC)</option>
+    </select>
+
+    <label for="currency-select">Válaszd ki a pénznemet:</label>
+    <select id="currency-select">
+      <option value="usd">USD</option>
+      <option value="eur">EUR</option>
+      <option value="huf">HUF</option>
+      <option value="gbp">GBP</option>
+      <option value="jpy">JPY</option>
+      <option value="aud">AUD</option>
+      <option value="cad">CAD</option>
+      <option value="chf">CHF</option>
+      <option value="inr">INR</option>
+      <option value="czk">CZK</option>
+    </select>
+
+    <label for="amount">Összeg:</label>
+    <input type="number" id="amount" placeholder="Írd be az összeget" />
+
+    <button onclick="convertCrypto()">Számolás</button>
+
+    <h3>Az eredmény:</h3>
+    <p id="conversion-result"></p>
+  </section>
+
+</main>
+
+<footer>
+  <p><strong>CoinGecko API-t használtam az élő adatokhoz</strong></p>
+</footer>
+
+<script src="cryptoConverter.js"></script>
+
+</body>
+</html>
